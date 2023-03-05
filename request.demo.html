@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="short icon" href="assets/images/favicon.ico" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+        <link rel="stylesheet" href="assets/css/owl.theme.green.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <title>education request.demo</title>
+    </head>
+
+    <body>
+        <header id="navbar" class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="header-left">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="dropdown"><a href="javascript:void(0);">solutions <i
+                                            class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="solution-aproach.html" target="new">approach</a> </li>
+                                        <li><a href="process.html" target="new">process</a> </li>
+                                        <li><a href="chatbot.html" target="new">chatbot</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="javascript:void(0);">resources <i
+                                            class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="blog.html" target="new">blog</a> </li>
+                                        <li><a href="javascript:void(0)" target="new">case studies</a> </li>
+                                        <li><a href="javascript:void(0)" target="new">ebook</a> </li>
+                                        <li><a href="javascript:void(0)" target="new">events</a> </li>
+                                        <li><a href="javascript:void(0)" target="new">news</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="javascript:void(0);">why education<i
+                                            class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="javascript:void(0)" target="new">about us</a> </li>
+                                        <li><a href="javascript:void(0)" target="new">our team</a> </li>
+                                        <li><a href="javascript:void(0)" target="new">careers</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-icon"><span></span></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="nav-bar">
+                            <ul>
+                                <li><a href="contact-us.html" target="new">contact us</a> </li>
+                                <li><a href="sign-in.html" target="new">sign in</a> </li>
+                                <li><a href="request.demo.html" target="new" class="main-button"> request a demo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu">
+                        <ul>
+                            <li><a href="javascript:void(0);">solutions <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="javascript:void(0);">resources <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="javascript:void(0);">why compulsory? <i class="fa-solid fa-angle-down"></i></a>
+                            </li>
+                            <li><a href="contact-us.html" target="new">contact us</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="request">
+                    <h1>Request a Demo</h1>
+                    <p>Browse for Events & Opportunities to connect with compulsory</p>
+                </div>
+                <div class="request-demo">
+                    <div class="request-demo-left">
+                        <h4>Learn how compulsory can help Improve Attendance and Reduce Chronic Absenteeism</h4>
+                        <p>compulsory helps districts manage attendance interventions and family engagement with simple
+                            software and
+                            evidence-based strategies that improve student attendance and outcomes.</p>
+                    </div>
+                    <div class="contact-right">
+                        <h6>Fill out the form below to schedule a demo</h6>
+                        <!-- <form action="">
+                        <div class="form-group">
+                            <input type="text" name="firstname" placeholder="first name*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="last name" placeholder="last name*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="school name" placeholder="school*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="job" placeholder="job title*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="email" placeholder="email address*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="phone number" placeholder="phone number*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="state" placeholder="state*" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="attendence" id="" cols="30" rows="10"
+                                placeholder="what is your attendence priority?" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="submit" name="submit" class="main-button" required>
+                        </div>
+                    </form> -->
+                        <form action="" name="contactus" onsubmit="return contactvalidate()">
+                            <div class="form-group">
+                                <input type="text" name="firstname" placeholder="first name*"
+                                    onkeyup="contactvalidate()">
+                                <span id="error1" style="color: red;"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastname" placeholder="last name*" onkeyup="contactvalidate()">
+                                <span id="error2" style="color: red;"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="schoolname" placeholder="school*" onkeyup="contactvalidate()">
+                                <span id="error3" style="color: red;"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="job" placeholder="job title*" onkeyup="contactvalidate()">
+                                <span id="error4" style="color: red;"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="email address*"
+                                    onkeyup="contactvalidate()">
+                                <span id="error5" style="color: red;"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phonenumber" placeholder="phone number*"
+                                    onkeyup="contactvalidate()">
+                                <span id="error6" style="color: red;"></span>
+                            </div>
+                            <div class="form-group">
+                                <!-- <input type="text" name="state" placeholder="state*" onkeyup="contactvalidate()"> -->
+                            </div>
+                            <div class="form-group">
+                                <textarea name="attendence" id="" cols="30" rows="10"
+                                    placeholder="what is your attendence priority?"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="main-button">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="education">
+                    <div class="education-left">
+                        <h3>compulsory education</h3>
+                        <p>Improving Attendance and Reducing Chronic Absenteeism</p>
+
+                    </div>
+                    <div class="education-right">
+                        <ul>
+                            <li><a href="contact-us.html" target="new">contact us</a> </li>
+                            <li><a href="sign-in.html" target="new">sign in</a></li>
+                            <li><a href="request.demo.html" target="new" class="main-button">request a demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-us">
+                    <div class="about-list">
+                        <p>SOLUTION</p>
+                        <ul>
+                            <li><a href="solution-aproach.html">Our Approach</a></li>
+                            <li><a href="javascript:void(0);">Our Product</a></li>
+                            <li><a href="process.html">Our Process</a></li>
+                            <li><a href="chatbot.html">Chatbot AI</a></li>
+                        </ul>
+                    </div>
+                    <div class="about-list">
+                        <p>SOLUTION</p>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="javascript:void(0);">Events</a></li>
+                            <li><a href="javascript:void(0);">Case Studies</a></li>
+                            <li><a href="javascript:void(0);">eBooks</a></li>
+                        </ul>
+                    </div>
+                    <div class="about-list">
+                        <p>ABOUT US</p>
+                        <ul>
+                            <li><a href="javascript:void(0);">Why compulsory?</a></li>
+                            <li><a href="javascript:void(0);">Our Story</a></li>
+                            <li><a href="javascript:void(0);">In the News</a></li>
+                            <li><a href="javascript:void(0);">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-list">
+                        <p>CONTACT</p>
+                        <ul>
+                            <li>Add: compulsory Education, 125 Western <span>Avenue
+                                    Boston, MA 02163</span></li>
+                            <li>Email: <a href="mailto:help@compulsory.com">help@compulsory.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="copyright-policy">
+                        <ul>
+                            <li>© 2022 compulsory</li>
+                            <li> <a href="javascript:void(0);"> Privacy Policy</a></li>
+                            <li> <a href="javascript:void(0);">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-logo">
+                        <ul>
+                            <li> <a href=""> <i class="fa-brands fa-facebook-f"></a></i>
+                            <li> <a href=""> <i class="fa-brands fa-twitter"></a></i>
+                            <li> <a href=""> <i class="fa-brands fa-instagram"></a></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="scroll" id="back-to-top">
+            <a href="#top" id="#down"><i class="fa-solid fa-arrow-up-long"></i> </a>
+        </div>
+
+
+
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/script.js" type="text/javascript"></script>
+
+        <script>
+            function contactvalidate() {
+                var x = document.contactus.firstname.value;
+                var y = document.contactus.lastname.value;
+                var z = document.contactus.schoolname.value;
+                var a = document.contactus.job.value;
+                var b = document.contactus.email.value;
+                var c = document.contactus.phonenumber.value;
+
+                var regfname = /^[a-zA-Z ]{3,16}$/;
+                var reglname = /^[a-zA-Z ]{3,16}$/;
+                var regsname = /^[a-zA-Z ]{3,16}$/;
+                var regjname = /^[a-zA-Z ]{3,16}$/;
+                var regmail = /^[a-zA-Z0-9._]{3,}[@][a-zA-Z]{5}[.][a-zA-Z]{2,3}$/;
+                var regnumber = /^[0-9]{10}$/;
+
+                if (regfname.test(x)) {
+                    if (x[0] === " ") {
+                        document.getElementById("error1").innerHTML = "can't take space";
+                        return false;
+                    } else {
+                        document.getElementById("error1").innerHTML = "";
+                    }
+                } else {
+                    document.getElementById("error1").innerHTML = "enter valid first name";
+                    return false;
+                }
+
+                if (reglname.test(y)) {
+                    document.getElementById("error2").innerHTML = "";
+                } else {
+                    document.getElementById("error2").innerHTML = "enter valid last name";
+                    return false;
+                }
+
+                if (regsname.test(z)) {
+                    document.getElementById("error3").innerHTML = "";
+                } else {
+                    document.getElementById("error3").innerHTML = "enter valid value";
+                    return false;
+                }
+
+                if (regjname.test(a)) {
+                    document.getElementById("error4").innerHTML = "";
+                } else {
+                    document.getElementById("error4").innerHTML = "enter valid value";
+                    return false;
+                }
+                if (regmail.test(b)) {
+                    document.getElementById("error5").innerHTML = "";
+                } else {
+                    document.getElementById("error5").innerHTML = "enter valid email";
+                    return false;
+                }
+                if (regnumber.test(c)) {
+                    document.getElementById("error6").innerHTML = "";
+                } else {
+                    document.getElementById("error6").innerHTML = "enter valid number";
+                    return false;
+                }
+            }
+        </script>
+    </body>
+
+</html>
